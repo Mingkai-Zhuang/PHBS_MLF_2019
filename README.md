@@ -1,6 +1,6 @@
 # PHBS_MLF_2019
 
-## Team Member(Group 8)
+## Team Member(Group 08)
 
 Student Name | GitHub ID | Student ID
 :---------:  |:---------:|:---------:
