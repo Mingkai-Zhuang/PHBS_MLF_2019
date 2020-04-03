@@ -4,10 +4,10 @@
 
 Student Name | GitHub ID | Student ID
 :---------:  |:---------:|:---------:
-Zhuang Mingkai| Mingkai-Zhuang  |1901212687
-Zhou Chi|zaynmalivski | 1901212684
-Wang Ke|KeWang-pku | 1901212641
-Ni Ye|NiYee | 1901212623
+Zhuang Mingkai| [Mingkai-Zhuang](http://github.com/Mingkai-Zhuang/PHBS_MLF_2019/) |1901212687
+Zhou Chi|[zaynmalivski](http://github.com/zaynmalivski/PHBS_MLF_2019/) | 1901212684
+Wang Ke|[KeWang-pku](http://github.com/KeWang-pku/) | 1901212641
+Ni Ye|[NiYee](http://github.com/NiYee/) | 1901212623
 
 ## Project Introduction
 * Goal: Predict the return of a stock, given the history of the past few days.
