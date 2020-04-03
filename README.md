@@ -10,4 +10,4 @@ Wang Ke|[KeWang-pku](http://github.com/KeWang-pku/) | 1901212641
 Ni Ye|[NiYee](http://github.com/NiYee/) | 1901212623
 
 ## About Project
-The specific information will be put in [Course Project](http://https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/tree/master/Course%20Project) folder.
+The specific information will be put in [Course Project](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/tree/master/Course%20Project) folder.
