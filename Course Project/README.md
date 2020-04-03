@@ -1,4 +1,4 @@
-#
+# Predict Stock Returns
 
 ## Team Member
 
@@ -9,7 +9,16 @@ Zhou Chi|zaynmalivski | 1901212684
 Wang Ke|KeWang-pku | 1901212641
 Ni Ye|NiYee | 1901212623
 
+## Project Introduction
+* Goal: Predict the return of a stock, given the history of the past few days.
+* The datasets provide 5-day windows of time, days D-2, D-1, D, D+1, and D+2. We are given returns in days D-2, D-1, and part of day D, and we will predict the returns in the rest of day D, and in days D+1 and D+2.
+During day D, there is intraday return data, which are the returns at different points in the day. The datasets provide 180 minutes of data, from t=1 to t=180. In the training set we are given the full 180 minutes, in the test set just the first 120 minutes are provided.
+For each 5-day window, datasets also provide 25 features, Feature_1 to Feature_25. Each row in the dataset is an arbitrary stock at an arbitrary 5 day time window.
+
 ## Data
+### Data Download
+The datasets downloaded from [Kaggle-The Winton Stock Market Challenge](https://www.kaggle.com/c/the-winton-stock-market-challenge/data)
+
 ### Data Files Descrition
 * train.csv - the training set, including the columns of:
   * Feature_1 - Feature_25
