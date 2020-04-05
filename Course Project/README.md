@@ -1,6 +1,6 @@
 # Predict Stock Returns
 
-## Team Member
+## Team Member(Group 08)
 
 Student Name | GitHub ID | Student ID
 :---------:  |:---------:|:---------:
