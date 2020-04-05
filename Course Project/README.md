@@ -20,14 +20,15 @@ For each 5-day window, datasets also provide 25 features, Feature_1 to Feature_2
 The datasets downloaded from [Kaggle-The Winton Stock Market Challenge](https://www.kaggle.com/c/the-winton-stock-market-challenge/data)
 
 ### Data Files Descrition
-* train.csv - the training set, including the columns of:
+**Note：** Because of the limited size of files uploaded to GitHub, we only upload a part of our datasets but include all specific labels.
+* train.xlsx - the training set, including the columns of:
   * Feature_1 - Feature_25
   * Ret_MinusTwo, Ret_MinusOne
   * Ret_2 - Ret_120
   * Ret_121 - Ret_180: target variables
   * Ret_PlusOne, Ret_PlusTwo: target variables
   * Weight_Intraday, Weight_Daily
-* test.csv - the test set, including the columns of:
+* test.xlsx - the test set, including the columns of:
   * Feature_1 - Feature_25
   * Ret_MinusTwo, Ret_MinusOne
   * Ret_2 - Ret_120
