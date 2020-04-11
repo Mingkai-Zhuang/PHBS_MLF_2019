@@ -1,4 +1,4 @@
-# Predict Stock Returns
+# Predict Stock Returns with Past Few Days' Data
 
 ## Team Member(Group 08)
 
@@ -50,7 +50,7 @@ Because the datasets are complicated, we make some basic anlysis for it, which c
 
 Firstly, Ret_2 - Ret_120 are return per minute at Day D(intraday). However, the aggregative return at 120 minute is more useful. Hence, we sum these data and calculate standard deviation. We name them by R_Agg,	R_Agg_Std	and R_Std respectively.
 
-Secondly, we can find that some data are integer and some others are decimal from the ```.csv``` files. Apart from these, some data are missing. In order to better use these data, we will try to understand natures of these features. The part of the tabel is the analysis results.(You can see the original tabel in ```Data Analysis.ipynb``` [file](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Data%20Analysis.ipynb) )
+Secondly, we can find that some data are integer and some others are decimal from the ```.csv``` files. Apart from these, some data are missing. In order to better use these data, we will try to understand natures of these features. The part of the tabel is the analysis results.(You can see the original tabel in [```Data Analysis.ipynb``` ](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Data%20Analysis.ipynb) )
 
 ![data_analysis](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/data%20analysis.jpg)
 
