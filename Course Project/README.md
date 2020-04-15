@@ -46,7 +46,7 @@ The datasets downloaded from [Kaggle-The Winton Stock Market Challenge](https://
 * Weight_Daily: weight used to evaluate daily return predictions (Ret_PlusOne and Ret_PlusTwo).
 
 ## [Data Analysis](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Data%20Analysis.ipynb)
-Because the datasets are complicated, we make some basic anlysis for it, which can help us better understand data itself. 
+Because the datasets are complicated, we make some basic analysis for it, which can help us better understand data itself. 
 
 Firstly, Ret_2 - Ret_120 are return per minute at Day D(intraday). However, the aggregative return at 120 minute is more useful. Hence, we sum these data and calculate standard deviation. We name them by R_Agg,	R_Agg_Std	and R_Std respectively.
 
@@ -55,14 +55,14 @@ Secondly, we can find that some data are integer and some others are decimal fro
 ![data_analysis](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/data%20analysis.jpg)
 
 **Analysis Label Description:** 
-* Missing and Missing % represent the number and percantage of missing data.
+* Missing and Missing % represent the number and percentage of missing data.
 * Unique and Unique % represent the number and percentage of unique numbers, which can help determine the category features.
 * Special and Special % represent the number and percentage of the most unique numbers, which can help determine the category features.
-* Singular and Singular % represent the number and percentage of sigular values.
+* Singular and Singular % represent the number and percentage of singular values.
 
 **Summary of data:**
 After some simple analysis, we can divide the features to two labels -- numerical features and category features.
 Classification | Specific Features or Index
 :------:  |:----------------------------------------------------------------------------------------:
 Numerical Features | 'Feature_2', 'Feature_3', 'Feature_4', 'Feature_6','Feature_11', 'Feature_14', 'Feature_17', 'Feature_18', 'Feature_19','Feature_21', 'Feature_22', 'Feature_23', 'Feature_24','Feature_25','Ret_MinusTwo', 'Ret_MinusOne', 'R_Agg', 'R_Agg_Std','R_Std' 
-Category Features |  'Feature_1', 'Feature_5', 'Feature_7', 'Feature_8', 'Feature_9', 'Feature_10','Feature_12', 'Feature_13','Feature_15', 'Feature_16', 'Feature_20'
+Category Features |  'Feature_1', 'Feature_5', 'Feature_7', 'Feature_8', 'Feature_9', 'Feature_10','Feature_12', 'Feature_13','Feature_15', 'Feature_16', 'Feature_20' 
