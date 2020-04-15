@@ -66,3 +66,26 @@ Classification | Specific Features or Index
 :------:  |:----------------------------------------------------------------------------------------:
 Numerical Features | 'Feature_2', 'Feature_3', 'Feature_4', 'Feature_6','Feature_11', 'Feature_14', 'Feature_17', 'Feature_18', 'Feature_19','Feature_21', 'Feature_22', 'Feature_23', 'Feature_24','Feature_25','Ret_MinusTwo', 'Ret_MinusOne', 'R_Agg', 'R_Agg_Std','R_Std' 
 Category Features |  'Feature_1', 'Feature_5', 'Feature_7', 'Feature_8', 'Feature_9', 'Feature_10','Feature_12', 'Feature_13','Feature_15', 'Feature_16', 'Feature_20' 
+
+## [Visual Data Analysis](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Visual%20Data%20Analysis.ipynb)
+In this part, we will try to get a better understanding of the properties of different features and their relation to the targets by plotting:
+* the features' correlations
+* the distributions of the features
+* regression plots for the features.
+
+Through the distributions graph, most of the features don't have a normal distribution. 
+
+By the correlation heatmap and the regression plots, we could see the evidence of correlations both within features and between features and targets. 
+
+![heatmap](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/heatmap.png)
+
+Moreover, some features have higher correlations which present a pattern of clusters, which are:
+* [Feature_3 - Feature_11] & [Feature_3 - Feature_11]
+* [Feature_3 - Feature_11] & [Feature_17 - Feature_25]
+* [Feature_17 - Feature_25] & [Feature_17 - Feature_25]
+
+**Visual Data Analysis After Processing:**
+
+In the part of data Processing, we deal with the issues above, normalizing the features and eliminating the correlation between features and targets.
+
+![regressionpoints](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/regressionpoints.png)
