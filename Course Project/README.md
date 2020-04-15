@@ -89,3 +89,33 @@ Moreover, some features have higher correlations which present a pattern of clus
 In the part of data Processing, we deal with the issues above, normalizing the features and eliminating the correlation between features and targets.
 
 ![regpoints_Processed](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/regpoints_Processed.png)
+
+
+
+## [Data Preprocessing](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Data_Proprocessing.ipynb)
+
+In the data preprocessing part, we did the following transformation in order to get better result:
+
+- Fill in the missing value
+
+  Since we do not know what is the actual meaning of each feature, we chose to use constants to fill in all missing values, which is a simple and conservative option.
+
+
+- Nomalize the numerical variables
+
+  For numerical variables, we try to solve the distribution problem by appling the ﻿QuantileTransformer function to each of them, which is a quite robust transformer and it can also reduce our concern about outliers. 
+
+  In the beginning, we are considering to apply PCA method to the numerical variables, just as what we learned in the class. But we find that we can get a much higher prediction accuracy without this step. 
+
+- Apply PCA method to categorical variables
+
+  We apply PCA method to the categorical variables. After PCA, we find that the first principle component can explain most of the variance. And it is much larger than other variables.
+
+  After normaling the first principle component, we find it's value becomes 1 or -1, which seperate the sample into two categories.This variable is very important in our model, and can imporve the model performance significantly.
+
+   
+
+
+
+
+
