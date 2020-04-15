@@ -88,4 +88,4 @@ Moreover, some features have higher correlations which present a pattern of clus
 
 In the part of data Processing, we deal with the issues above, normalizing the features and eliminating the correlation between features and targets.
 
-![regressionpoints]
+![regpoints_Processed](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/regpoints_Processed.png)
