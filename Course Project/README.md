@@ -55,10 +55,10 @@ Secondly, we can find that some data are integer and some others are decimal fro
 ![data_analysis](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/data%20analysis.jpg)
 
 **Analysis Label Description:** 
-* Missing and Missing % represent the number and percantage of missing data.
+* Missing and Missing % represent the number and percentage of missing data.
 * Unique and Unique % represent the number and percentage of unique numbers, which can help determine the category features.
 * Special and Special % represent the number and percentage of the most unique numbers, which can help determine the category features.
-* Singular and Singular % represent the number and percentage of sigular values.
+* Singular and Singular % represent the number and percentage of singular values.
 
 **Summary of data:**
 After some simple analysis, we can divide the features to two labels -- numerical features and category features.
