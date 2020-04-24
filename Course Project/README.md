@@ -67,6 +67,28 @@ Classification | Specific Features or Index
 Numerical Features | 'Feature_2', 'Feature_3', 'Feature_4', 'Feature_6','Feature_11', 'Feature_14', 'Feature_17', 'Feature_18', 'Feature_19','Feature_21', 'Feature_22', 'Feature_23', 'Feature_24','Feature_25','Ret_MinusTwo', 'Ret_MinusOne', 'R_Agg', 'R_Agg_Std','R_Std' 
 Category Features |  'Feature_1', 'Feature_5', 'Feature_7', 'Feature_8', 'Feature_9', 'Feature_10','Feature_12', 'Feature_13','Feature_15', 'Feature_16', 'Feature_20' 
 
+## [Data Preprocessing](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Data_Proprocessing.ipynb)
+
+In the data preprocessing part, we did the following transformation in order to get better result:
+
+- Fill in the missing value
+
+  Since we do not know what is the actual meaning of each feature, we chose to use constants to fill in all missing values, which is a simple and conservative option.
+
+
+- Nomalize the numerical variables
+
+  For numerical variables, we try to solve the distribution problem by appling the ﻿QuantileTransformer function to each of them, which is a quite robust transformer and it can also reduce our concern about outliers. 
+
+  In the beginning, we are considering to apply PCA method to the numerical variables, just as what we learned in the class. But we find that we can get a much higher prediction accuracy without this step. 
+
+- Apply PCA method to categorical variables
+
+  We apply PCA method to the categorical variables. After PCA, we find that the first principle component can explain most of the variance. And it is much larger than other variables.
+
+  After normaling the first principle component, we find it's value becomes 1 or -1, which seperate the sample into two categories.This variable is very important in our model, and can imporve the model performance significantly.
+
+   
 ## [Visual Data Analysis](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Visual%20Data%20Analysis.ipynb)
 In this part, we will try to get a better understanding of the properties of different features and their relation to the targets by plotting:
 * the features' correlations
@@ -88,4 +110,8 @@ Moreover, some features have higher correlations which present a pattern of clus
 
 In the part of data Processing, we deal with the issues above, normalizing the features and eliminating the correlation between features and targets.
 
-![regressionpoints]
+![regpoints_Processed](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/regpoints_Processed.png)
+
+
+
+
