@@ -16,7 +16,8 @@ During day D, there is intraday return data, which are the returns at different 
 For each 5-day window, datasets also provide 25 features, Feature_1 to Feature_25. Each row in the dataset is an arbitrary stock at an arbitrary 5 day time window.
 ![Explanation](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/Explanation.jpg)
 * Weighted Mean Absolute Error(WMAE) is used to evaluate the results with the actual ones as the competition required. The formual is defined as
-![formula](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/formula.png)
+
+<div align=center><src="https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/formula.png"/)</div>
 
 
 ## Data
