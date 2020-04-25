@@ -120,7 +120,7 @@ In the part of data Processing, we deal with the issues above, normalizing the f
 
 ![RegressionPoints](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/RegressionPoints.png)
 
-## [Modelling](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Modelling.ipynb)
+## [Modelling and Results](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Modelling.ipynb)
 
 We will focus on LinearSVR, as this method seems to deals particullary well with data with a very low Signal-to-noise ratio as one would expect from financial data with high frequency. It is also a very fast algorithm with liblinear. For comparison purposes, we also run a LinearRegression model. We will do a grid search in the 2 key parameters, epsilon and C, which is related to the tube's width and regularization.
 
@@ -144,3 +144,4 @@ We would like to briefly touch on a few possible improvements to potentially inc
 - Categorical features. We suspect that there may be some features that are ordinal while the others are nominal, but it is hard to auto-identify them by only the numbers and distribution without knowing what the feature is.
 
 Overall, our model has exploited something useful to predict future returns, for there's lower error in our chosen model, but it is not closely related to any trading metrics (such as Sharpe ratio), which means we will need to consider more things for it to become a profitable trading strategy (such as maximum shortfall and market friction).
+
