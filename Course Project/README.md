@@ -15,6 +15,9 @@ Ni Ye|[NiYee](http://github.com/NiYee/) | 1901212623
 During day D, there is intraday return data, which are the returns at different points in the day. The datasets provide 180 minutes of data, from t=1 to t=180. In the training set we are given the full 180 minutes, in the test set just the first 120 minutes are provided.
 For each 5-day window, datasets also provide 25 features, Feature_1 to Feature_25. Each row in the dataset is an arbitrary stock at an arbitrary 5 day time window.
 ![Explanation](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/Explanation.jpg)
+* Weighted Mean Absolute Error(WMAE) is used to evaluate the results with the actual ones as the competition required. The formual is defined as
+![formula](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/formula.png)
+
 
 ## Data
 ### Data Download
