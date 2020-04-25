@@ -112,6 +112,27 @@ In the part of data Processing, we deal with the issues above, normalizing the f
 
 ![RegressionPoints](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/RegressionPoints.png)
 
+## [Modelling](https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Code/Modelling.ipynb)
 
+We will focus on LinearSVR, as this method seems to deals particullary well with data with a very low Signal-to-noise ratio as one would expect from financial data with high frequency. It is also a very fast algorithm with liblinear. For comparison purposes, we also run a LinearRegression model. We will do a grid search in the 2 key parameters, epsilon and C, which is related to the tube's width and regularization.
 
+To be consistent with the competition's requirement, we use weighted mean absolute error (WMAE) to evaluate the model performance. It's calculated by firstly take the difference of the predicted value and given true value, then take weighted average with prediction weight given by the competition dataset. Models with lower WMAE is better.
 
+Additionally, the baseline model mentioned below is just simply take the average of the given values to predict future values. Once we get a result with lower WMAE than the baseline model, we can say that we have exploit something useful to predict future returns.
+
+Here are the learning results:
+RESULT| Baseline | LinearRegression | LinearSVR
+:---------:|:---------:|:---------:|:----------:
+WMAE|27837.4369|27817.3544|27812.5624
+Parameter|NA|Default|`{'C':0.0001, 'epsilon':0.0, 'loss': 'epsilon_incensitive'}`
+
+We observe a much smaller error, i.e. the LinearSVR model performs better than the others.
+
+## Improvements and Notes
+
+We would like to briefly touch on a few possible improvements to potentially increase model performance:
+- Ensemble. We did not investigate ensemble models. This is one of the usual ways to improve final models performance.
+- Features interaction. We should consider a more selective feature interaction to improve model performance. Since we don't really know what the features are, this is difficult to achieve.
+- Categorical features. We suspect that there may be some features that are ordinal while the others are nominal, but it is hard to auto-identify them by only the numbers and distribution without knowing what the feature is.
+
+Overall, our model has exploited something useful to predict future returns, for there's lower error in our chosen model, but it is not closely related to any trading metrics (such as Sharpe ratio), which means we will need to consider more things for it to become a profitable trading strategy (such as maximum shortfall and market friction).
