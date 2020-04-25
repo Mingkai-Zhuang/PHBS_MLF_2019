@@ -20,6 +20,7 @@ For each 5-day window, datasets also provide 25 features, Feature_1 to Feature_2
 <div align=center>
 	<img src="https://github.com/Mingkai-Zhuang/PHBS_MLF_2019/blob/master/Course%20Project/Images/formula.png">
 </div>
+where w_i is the weight associated with the return, y_i is the actual value, \hat{y_i} is the predicted value and n is the number of predictions. The weights are given in the original datasets.
 
 
 
